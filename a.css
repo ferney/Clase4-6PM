@@ -1,0 +1,37 @@
+body{
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar, .header{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+p{
+    margin-bottom: 40px;
+}
+
+.contenido2{
+    padding: 100px 30%;
+    background: chartreuse;
+    color: cornsilk;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.titulo{
+    margin-bottom: 40px;
+    font: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+}
+.listaTratamientos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
