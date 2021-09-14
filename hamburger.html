@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            * {margin: 0; padding:0;}
+*,*::before, *::after {
+  box-sizing: inherit;
+}
+html {
+  box-szing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background: #fafafa;
+  padding: 0 2rem 2rem;
+  color: #223;
+}
+
+nav {
+  font-size: 12px;
+  box-shadow: 0 1px 2px rgba(19, 51, 61, 0.5);
+  margin: 0 0 3rem;
+  padding: 0 0 0 1em;
+  height: 75px; /* Menu height */
+  overflow: hidden; /* Don't show anything outside the nav */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-height: 150px; /* Menu height x 2 */
+  position: relative; /* Position the menu button relative to this item */
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+nav li:hover {
+}
+
+nav a {
+  background-color: #FFF;
+  display: block;
+  padding: 0 1em;
+  color: #444;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 75px; /* Menu height */
+  height: 75px; /* Menu height */
+}
+nav a:hover {
+  background-color: rgba(162,242,156, 1);
+}
+
+nav li:last-child { /* The menu button */
+  position: absolute; /* Move the menu button out of flow */
+  right: 0;
+  bottom: 75px; /* Move upwards, the same distance as the menu height */
+  background: #fff;
+  box-shadow: -.2rem 0 .5rem rgba(0,0,0,.7), -.4rem 0 .5rem rgba(0,0,0,.3);
+  padding: 0 1em;
+}
+
+nav li:nth-last-child(2) { /* The close button */
+  display: none;
+}
+
+#menu:target {
+  height: auto;
+  padding: 0;
+  overflow: visible;
+  box-shadow: 0 0;
+}
+
+#menu:target ul {
+  max-height: 10vh;
+  height: auto;
+  text-align: left;
+}
+
+#menu:target li {
+  display: block;
+}
+#menu:target a {
+  background:#FE7867;
+  color: #fff;
+  display: block;
+  height: 3rem;
+  line-height: 3rem;
+  transition: .4s
+}
+
+#menu:target a:hover {
+  background-color: rgba(162,242,156, .5);
+  color: #444;
+  text-indent: 2rem;
+}
+
+#menu:target li:last-child {
+  display: none;
+}
+
+#menu:target li:nth-last-child(2) {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: -2px;
+  margin: 0;
+}
+#menu:target li:nth-last-child(2) a {
+  background: inherit;
+  color: #FE7867;
+}
+#menu:target ~ * {
+  display: none;
+}
+
+
+Resources
+        </style>
+    </head>
+    <body>
+        <nav id="menu">
+            <ul id="menu-closed">
+              <li><a href="#">Start</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Things</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#menu-closed">&#215; </a></li>
+              <li><a href="#menu">&#9776; </a></li>
+            </ul>
+          </nav>
+          
+    </body>
+</html>

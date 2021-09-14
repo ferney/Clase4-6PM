@@ -5,22 +5,50 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+ol,ul{
+    list-style: none;
+}
+.navbar{
+    height: 70px;
+    background: hotpink;
+    border-bottom: 2px red;
+
+}
+.navbar a{
+    padding: 0 20px;
+    color: blueviolet;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
 .navbar, .header{
     display: flex;
     justify-content: center;
     justify-items: center;
 }
-
-p{
-    margin-bottom: 40px;
+.localizacion{
+    color: chocolate;
+    padding-bottom: 0;
+    background: cyan;
 }
+
+.localizacion img{
+    max-width: 100%;
+    width: auto;
+    border-radius: 40%;
+    
+}
+
 
 .contenido2{
     padding: 100px 30%;
     background: chartreuse;
-    color: cornsilk;
+    color: black;
     max-width: 80%;
     margin: 0 auto;
+    
 }
 
 .titulo{
@@ -34,4 +62,51 @@ p{
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    background: hotpink;
+}
+
+.tratamientos{
+background: palegreen;
+padding-bottom: 0;
+
+}
+
+.tarifas{
+    background: salmon;
+    color: black;
+    text-align: left;
+}
+.footer{
+    background: cyan;
+    color: gray;
+
+}
+
+.navi{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	 /* Escondemos nuestro menú con un valor negativo */ 
+	width: 300px;
+	z-index: 1;
+	padding: 90px 30px 30px;
+	background: #68C5DB;
+	opacity: 0;
+	transition: all 0.75s ease;
+	font-size: 1.2em;
+	overflow-y: auto;
+}
+
+.navi a{
+	display:block;
+	text-decoration: none;
+	padding: 10px;
+	color: red;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	transition: all ease 0.25s;
+}
+ 
+.navi a:hover{
+	color:saddlebrown;
+	border-bottom-color:rgba(255,255,255,0.4);
 }
