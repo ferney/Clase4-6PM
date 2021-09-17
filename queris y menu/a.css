@@ -1,0 +1,212 @@
+/*https://cdn.icon-icons.com/icons2/12/PNG/256/playsoccersports_juegos_futbo_1762.png*/
+body{
+    font-size: 50%;
+    
+}
+
+.imagen{
+    background-image: url(https://cdn.icon-icons.com/icons2/12/PNG/64/playsoccersports_juegos_futbo_1762.png);
+    background-repeat: no-repeat;
+    height: 100px;
+}
+
+@media screen and (min-width:400px){
+    body{
+        font-size: 100%;
+        transition: 0.5s;
+    }
+    .imagen{
+        background-image: url(https://cdn.icon-icons.com/icons2/12/PNG/96/playsoccersports_juegos_futbo_1762.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    transition: 0.5s;
+    }
+        .col1,.col2,.col3{
+            float: left;
+            width: 100%;
+        }
+        /*.menu{
+            display: none;
+        }
+        .menu2{
+            display: block;
+        } */
+}
+@media screen and (min-width:760px){
+    body{
+        font-size: 120%;
+        transition: 0.5s;
+    }
+    .imagen{
+        background-image: url(https://cdn.icon-icons.com/icons2/12/PNG/128/playsoccersports_juegos_futbo_1762.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    transition: 0.5s;
+            }
+            .col1,.col2{
+                float: left;
+                width: 50%;
+            }
+            /*.menu{
+                display: block;
+            }
+            .menu2{
+                display: none;
+            }*/
+
+
+            header label{
+                display: block;
+            }
+            .menu{
+                position: absolute;
+                background: aquamarine;
+                width: 100px;
+                margin-left: -100px;
+                transition: all 0.5s;
+                
+        }
+        
+            .menu ul{
+                flex-direction: column;
+            }
+            .menu li{
+                border-top: 1px solid brown;
+            }
+            #btn-menu:checked ~ .menu{
+                margin: 0;
+            }
+}
+@media screen and (min-width:1200px){
+    body{
+        font-size: 150%;
+        transition: 0.5s;
+    }
+    .imagen{
+        background-image: url(https://cdn.icon-icons.com/icons2/12/PNG/256/playsoccersports_juegos_futbo_1762.png);
+    background-repeat: no-repeat;
+    height: 300px;
+    transition: 0.5s;
+    }
+    .col1,.col2,.col3{
+        float: left;
+        width: 33%;
+    } 
+    /*.menu{
+        display: block;
+    }
+    .menu2{
+        display: none;
+    } */
+}
+
+
+.modo{
+    width: 80%;
+    margin: 2em auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background: black;
+        color: blanchedalmond;
+    }
+    h1{
+        color: blueviolet;
+    }
+    
+}
+
+
+@media screen and (max-width:760px){
+    body{
+        font-size: 120%;
+        transition: 0.5s;
+    }
+    .imagen{
+        background-image: url(https://cdn.icon-icons.com/icons2/12/PNG/128/playsoccersports_juegos_futbo_1762.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    transition: 0.5s;
+            }
+            .col1,.col2{
+                float: left;
+                width: 50%;
+            }
+            /*.menu{
+                display: block;
+            }
+            .menu2{
+                display: none;
+            }*/
+
+
+            header label{
+                display: block;
+            }
+            .menu{
+                position: absolute;
+                background: aquamarine;
+                width: 100px;
+                margin-left: -100px;
+                transition: all 0.5s;
+                
+        }
+        
+            .menu ul{
+                flex-direction: column;
+            }
+            .menu li{
+                border-top: 1px solid brown;
+            }
+            #btn-menu:checked ~ .menu{
+                margin: 0;
+            }
+}
+
+header{
+    width: 100%;
+    background: aquamarine;
+}
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid tomato;
+}
+header label:hover{
+    cursor: pointer;
+    background: lawngreen;
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+}
+.menu li{
+    border-right: orange;
+}
+.menu li:hover{
+    border-right: orchid;
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: deeppink;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
