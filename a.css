@@ -1,112 +1,212 @@
+/*https://cdn.icon-icons.com/icons2/12/PNG/256/playsoccersports_juegos_futbo_1762.png*/
 body{
-    background-color: antiquewhite;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50%;
+    
 }
 
-ol,ul{
+.imagen{
+    background-image: url(https://cdn.icon-icons.com/icons2/12/PNG/64/playsoccersports_juegos_futbo_1762.png);
+    background-repeat: no-repeat;
+    height: 100px;
+}
+
+@media screen and (min-width:400px){
+    body{
+        font-size: 100%;
+        transition: 0.5s;
+    }
+    .imagen{
+        background-image: url(https://cdn.icon-icons.com/icons2/12/PNG/96/playsoccersports_juegos_futbo_1762.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    transition: 0.5s;
+    }
+        .col1,.col2,.col3{
+            float: left;
+            width: 100%;
+        }
+        /*.menu{
+            display: none;
+        }
+        .menu2{
+            display: block;
+        } */
+}
+@media screen and (min-width:760px){
+    body{
+        font-size: 120%;
+        transition: 0.5s;
+    }
+    .imagen{
+        background-image: url(https://cdn.icon-icons.com/icons2/12/PNG/128/playsoccersports_juegos_futbo_1762.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    transition: 0.5s;
+            }
+            .col1,.col2{
+                float: left;
+                width: 50%;
+            }
+            /*.menu{
+                display: block;
+            }
+            .menu2{
+                display: none;
+            }*/
+
+
+            header label{
+                display: block;
+            }
+            .menu{
+                position: absolute;
+                background: aquamarine;
+                width: 100px;
+                margin-left: -100px;
+                transition: all 0.5s;
+                
+        }
+        
+            .menu ul{
+                flex-direction: column;
+            }
+            .menu li{
+                border-top: 1px solid brown;
+            }
+            #btn-menu:checked ~ .menu{
+                margin: 0;
+            }
+}
+@media screen and (min-width:1200px){
+    body{
+        font-size: 150%;
+        transition: 0.5s;
+    }
+    .imagen{
+        background-image: url(https://cdn.icon-icons.com/icons2/12/PNG/256/playsoccersports_juegos_futbo_1762.png);
+    background-repeat: no-repeat;
+    height: 300px;
+    transition: 0.5s;
+    }
+    .col1,.col2,.col3{
+        float: left;
+        width: 33%;
+    } 
+    /*.menu{
+        display: block;
+    }
+    .menu2{
+        display: none;
+    } */
+}
+
+
+.modo{
+    width: 80%;
+    margin: 2em auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background: black;
+        color: blanchedalmond;
+    }
+    h1{
+        color: blueviolet;
+    }
+    
+}
+
+
+@media screen and (max-width:760px){
+    body{
+        font-size: 120%;
+        transition: 0.5s;
+    }
+    .imagen{
+        background-image: url(https://cdn.icon-icons.com/icons2/12/PNG/128/playsoccersports_juegos_futbo_1762.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    transition: 0.5s;
+            }
+            .col1,.col2{
+                float: left;
+                width: 50%;
+            }
+            /*.menu{
+                display: block;
+            }
+            .menu2{
+                display: none;
+            }*/
+
+
+            header label{
+                display: block;
+            }
+            .menu{
+                position: absolute;
+                background: aquamarine;
+                width: 100px;
+                margin-left: -100px;
+                transition: all 0.5s;
+                
+        }
+        
+            .menu ul{
+                flex-direction: column;
+            }
+            .menu li{
+                border-top: 1px solid brown;
+            }
+            #btn-menu:checked ~ .menu{
+                margin: 0;
+            }
+}
+
+header{
+    width: 100%;
+    background: aquamarine;
+}
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid tomato;
+}
+header label:hover{
+    cursor: pointer;
+    background: lawngreen;
+}
+.menu ul{
+    margin: 0;
     list-style: none;
+    padding: 0;
+    display: flex;
+    
 }
-.navbar{
-    height: 70px;
-    background: hotpink;
-    border-bottom: 2px red;
-
+.menu li{
+    border-right: orange;
 }
-.navbar a{
-    padding: 0 20px;
-    color: blueviolet;
+.menu li:hover{
+    border-right: orchid;
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: deeppink;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-.navbar, .header{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-}
-.localizacion{
-    color: chocolate;
-    padding-bottom: 0;
-    background: cyan;
-}
-
-.localizacion img{
-    max-width: 100%;
-    width: auto;
-    border-radius: 40%;
-    
 }
 
 
-.contenido2{
-    padding: 100px 30%;
-    background: chartreuse;
-    color: black;
-    max-width: 80%;
-    margin: 0 auto;
-    
-}
 
-.titulo{
-    margin-bottom: 40px;
-    font: 60px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform: uppercase;
-}
-.listaTratamientos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    background: hotpink;
-}
 
-.tratamientos{
-background: palegreen;
-padding-bottom: 0;
 
-}
 
-.tarifas{
-    background: salmon;
-    color: black;
-    text-align: left;
-}
-.footer{
-    background: cyan;
-    color: gray;
 
-}
 
-.navi{
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	 /* Escondemos nuestro menú con un valor negativo */ 
-	width: 300px;
-	z-index: 1;
-	padding: 90px 30px 30px;
-	background: #68C5DB;
-	opacity: 0;
-	transition: all 0.75s ease;
-	font-size: 1.2em;
-	overflow-y: auto;
-}
-
-.navi a{
-	display:block;
-	text-decoration: none;
-	padding: 10px;
-	color: red;
-	border-bottom: 1px solid rgba(255,255,255,0.2);
-	transition: all ease 0.25s;
-}
- 
-.navi a:hover{
-	color:saddlebrown;
-	border-bottom-color:rgba(255,255,255,0.4);
-}
