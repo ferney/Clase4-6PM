@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+</head>
+<body>
+      <form action="">
+          <p>nombre:</p>
+          <input type="text" placeholder="Nombre" id="nombre">
+          <p>Edad:</p>
+          <input type="text" placeholder="edad" id="edad">
+          <p>contraseña:</p>
+          <input type="text" placeholder="password" id="pwr">
+          <p>correo:</p>
+          <input type="text" placeholder="correo" id="email">
+          <p>direccion:</p>
+          <input type="text" placeholder="correo" id="dir">
+          
+          <p>genero</p>
+          <input type="radio" value="" id="sexo" name="se">S
+          <input type="radio" value="" id="sexo" name="se">S
+          <input type="radio" value="" id="sexo" name="se">S
+
+<br>
+          <input type="submit" value="enviar" onclick="validar()">
+      </form>  
+    
+    <script src="a.js" ></script>
+</script>
+</body>
+</html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+<script src="es5script.js"></script>
+
+        <!-- ... -->
+    </body>
+</html>
+function validar(){
+var a=document.getElementById("nombre").value;
+var b=document.getElementById("edad").value;
+var c=document.getElementById("pwr").value;
+var d=document.getElementById("email").value;
+var dd=document.getElementById("dir").value;
+var e=document.getElementsByName("se").value;
+var seleccionado = false;
+
+/*validacion de nombre
+if(a==null||a.length>=8||a.length<=12||/^\s+$/.test(a)){
+    alert("este campo no debe estar vacio");
+    }
+
+//validacion de edad
+if(b==null||b.length==0||isNaN(b)){
+    alert("numero campo no debe estar vacio");
+    
+}
+
+//validacion de contraseña
+if(!(/^[0-9a-zA-Z]+$/.test(c))){
+    alert("contraseña invalida");
+    
+}
+
+//validacion de correo
+if(!(/\S+@\S+\.\S+/.test(d))){
+    alert("correo invalida");
+    
+}
+
+//validacion de correo  aaa44#- <=50 np vacio
+if(!(/^[0-9a-zA-Z #-]+$/.test(dd)) ||dd.length>=50||dd==null||dd.length==0 ){
+    alert("direccion invalida");
+    
+}*/
+
+//validacion de radiobutton
+for(var i=0;i<e.length;i++){
+if(e[i].checked){
+    seleccionado = true; 
+    break; 
+}
+}
+if(!seleccionado){
+    alert(" no seleccionado");
+    
+}
+
+
+
+
+}
+
+/*opciones = document.getElementsByName("opciones");
+ var seleccionado = false; for(var i=0; i<opciones.length; i++) { if(opciones[i].checked) 
+    { seleccionado = true; break; } } if(!seleccionado) { return false; } */
+
+var ES1     = !!(Array.prototype && Array.prototype.join),
+        ES3     = !!(Array.prototype && Array.prototype.pop),
+        ES51    = (function() {'use strict'; return !this; })(),
+        ES6     = !!Object.assign,
+        ES7     = !!(Array.prototype && Array.prototype.includes);
+            /*
+            var ES51    = Modernizr.es5,
+                ES6     = Modernizr.es6object;
+                ES7     = false;
+            */
+
+        if(ES7){
+            alert('Tu navegador contiene características mínimas de ECMAScript 7');
+        }else if(ES6){
+            alert('Tu navegador contiene características mínimas de ECMAScript 6');
+        }else if(ES51){
+            alert('Tu navegador tiene soporte para ECMAScript 5.1');
+        }else if(ES3){
+            alert('Tu navegador contiene características de ECMAScript 3');
+        }else if(ES1){
+            alert('Tu navegador contiene características de ECMAScript 1');
+        }else{
+            alert('Tu navegador contiene características de ECMAScript desconocida');
+        }
