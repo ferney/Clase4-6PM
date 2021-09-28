@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<form action="" class="registro"> 
+  
+    <p>Nombre</p>  
+    <input type="text" id="nombre"> 
+    <p>Apellido</p> 
+    <input type="text" id="apellido" >
+    <p>Teléfono</p> 
+    <input type="text" id="telefono"> 
+    <p>direccion</p> 
+    <input type="text" id="direccion">
+     <p>correo</p>
+    <input type="text" id="correo"> 
+  <p>contraseña</p> 
+    <input type="text" id="contrasena">
+  <br>
+  </form>
+  <input type="" value="guardar" onClick="generar()">
+  
+  
+  <div>
+    <table id="tabla">
+      
+    </table>
+  </div>
+</body>
+</html>
