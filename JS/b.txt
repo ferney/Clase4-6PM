@@ -1,0 +1,133 @@
+//crear el primer array
+/*var arreglo=[];
+var platos=["ceviche","tacos","ajiaco","pasta"];
+console.log(platos);
+var dos=["ceviche",4,true,4.9];
+console.log(dos);
+var nuevo= new Array("jamaica","colombia","barbados","francia");
+console.log(nuevo[1]);
+console.log(Array.isArray(dos));
+
+//medir un arreglo y acceder a el
+var platos=["ceviche","tacos","ajiaco","pasta"];
+console.log("hay "+platos.length+" platos en el menu");
+
+var a=platos[platos.length-1];
+console.log("mi plato preferido es el de "+a);
+
+//areglo multidimensionales
+var platos=["ceviche","tacos","ajiaco","pasta"];
+var platos2=["peru","mexico","colombia","italia"];
+var menu=[platos,platos2];
+
+console.log(menu);
+console.log(menu[1][0]+"-->"+menu[0][0]);
+console.log(menu[1][1]+"-->"+menu[0][1]);
+console.log(menu[1][2]+"-->"+menu[0][2]);
+console.log(menu[1][3]+"-->"+menu[0][3]);
+
+
+//operacione sbasicas con arreglos
+
+var platos=["ceviche","tacos","ajiaco","pasta"];
+console.log('Antes', platos);
+platos.push("bandej paisa");
+platos.push("arroz con coco");
+console.log('Despues', platos);
+platos.pop("arroz con coco");
+console.log('Mucho Despues', platos);
+console.log(platos.join());
+
+//generar arreglos con spltit, map
+
+var cocina="veviche, tacos, ajiaco, bandeja";
+var x=cocina.split(", ");
+console.log(x);
+function generar(){
+var y=Array.from(document.querySelectorAll('.registro p'));
+var yy=y.map(a=>a.textContent);
+console.log(yy);
+  yy.sort();
+console.log(yy);
+  yy.reverse();
+console.log(yy);
+  var a=yy[0];
+var a1=yy[1];
+var a2=yy[2];
+var a3=yy[3];
+var a4=yy[4];
+var a5=yy[5];
+console.log(a);
+console.log(a1);
+console.log(a2);
+console.log(a3);
+console.log(a4);
+console.log(a5);
+  
+var [a,b,c,d,e]=yy;
+console.log(a,b,c,d,e);
+}
+//var z=Array.of("jamaica","colombia","barbados","francia");
+
+//console.log(z);
+
+//desesctrruturar arays
+
+//iterar arreglso
+
+var platos=["ceviche","tacos","ajiaco","pasta"];
+
+for(var i=0;i<platos.length;i++){
+  console.log(platos[i]);
+}
+for(var i in platos){
+  console.log(platos[i]);
+}
+platos.forEach((a,i)=>console.log(i,a));
+
+var menu=[
+{nombre:'ceviche',precio:20000,pais:'peru'},
+  {nombre:'tacos',precio:25000,pais:'mexico'},
+    {nombre:'ajiaco',precio:15000,pais:'colombia'}
+];
+
+var eleccion=menu.find(a=>a.pais=='peru');
+console.log(eleccion);
+
+var eleccion2=menu.findIndex(a=>a.nombre=='ajiaco');
+console.log("el ajiaco es el platillo nuemro "+(eleccion2+1));
+
+var eleccion3=menu.some(a=>a.precio<=20000);
+console.log("¿Hay menu economico? ", eleccion3);
+
+var eleccion4=menu.every(a=>a.precio<=20000);
+console.log("¿todos cuestan menos de 20000? ", eleccion4);*/
+var usuarios=[];
+function generar(){
+  function usuario(nom,apel,tel,dir,cor,con){
+    this.nom=nom;
+    this.apel=apel;
+    this.tel=tel;
+    this.dir=dir;
+    this.cor=cor;
+    this.con=con;
+  }
+  
+  var n=document.getElementById('nombre').value;
+  var a=document.getElementById('apellido').value;
+  var t=document.getElementById('telefono').value;
+  var d=document.getElementById('direccion').value;
+  var c=document.getElementById('correo').value;
+  var cn=document.getElementById('contrasena').value;
+  
+  
+  user=new usuario(n,a,t,d,c,cn);
+  agregar();
+}
+
+function agregar(){
+  usuarios.push(user);
+  document.getElementById('tabla')
+    .innerHTML+='<tr><td>'+user.nom+'</td><td>'+user.apel+'</td><td>'+user.tel+'</td><td>'+user.dir+'</td><td>'+user.cor+'</td><td>'+user.con+'</td></tr>';
+}
+
