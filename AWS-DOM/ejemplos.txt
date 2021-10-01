@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" type="text/css" />
+    </head>
+    <body>
+        
+<div class="parent" id="parent">
+    <h1 id="xyz" class="xyz">parent</h1>
+    <input type="text" name="texto" id="texto"/>
+</div>
+<script type="text/javascript" src="index.js"></script>
+
+    </body>
+</html>
+
+
+////**************************************
+
+/*let parent=document.getElementById('parent');
+parent.addEventListener(
+    'mouseenter',
+    function(){
+        parent.style.background='blue';
+    }
+);
+
+
+let parent=document.getElementById('parent');
+parent.addEventListener(
+    'mouseover',
+    function(){
+        parent.style.background='red';
+    });
+    
+  let parent=document.getElementById('parent');
+parent.addEventListener(
+    'mousemove',
+    function(){
+        parent.style.background='green';
+        alert('se mueve');
+    });  
+   
+    
+    let parent=document.getElementById('parent');
+    parent.addEventListener(
+    'mousedown',
+    function(){
+        parent.style.background='blue';
+        alert('se presiona');
+    }); 
+    
+    let parent=document.getElementById('parent');
+    parent.addEventListener(
+    'mouseup',
+    function(){
+        parent.style.background='green';
+        alert('se se solto');
+    });
+    
+    let parent=document.getElementById('parent');
+    parent.addEventListener(
+    'auxclick',
+    function(){
+        parent.style.background='violet';
+        alert('click derecho activo/inactivo');
+    });
+     
+    let parent=document.getElementById('parent');
+    parent.addEventListener(
+    'click',
+    function(){
+        parent.style.background='gray';
+        alert('click');
+    });
+    
+    let parent=document.getElementById('parent');
+    parent.addEventListener(
+    'dblclick',
+    function(){
+        parent.style.background= 'violet';
+        alert('doble click');
+    });
+    
+   
+    let parent=document.getElementById('parent');
+    parent.addEventListener(
+    'contextmenu',
+    function(){
+        parent.style.background= 'yellow';
+        alert('click derecho');
+    });
+   
+    let parent=document.getElementById('parent');
+    parent.addEventListener(
+    'wheel',
+    function(){
+        parent.style.background= 'green';
+        alert('corre la ruedita');
+    });
+      
+        let parent=document.getElementById('parent');
+    parent.addEventListener(
+    'mouseleave',
+    function(){
+        parent.style.background= 'black';
+        alert('raton fuera');
+    });
+    
+   
+    let parent=document.getElementById('parent');
+    parent.addEventListener(
+    'mouseout',
+    function(){
+        parent.style.background= 'blue';
+        alert('raton dentro');
+    });
+    
+     
+     
+     
+var H1=document.createElement("h1");
+var text=document.createTextNode("hola");
+H1.appendChild(text);
+document.body.appendChild(H1);
+
+let parent=document.getElementById('parent');
+parent.insertAdjacentHTML('beforeend',
+'<img src="https://i.postimg.cc/rwdj52zj/Captura.png">');
+let parent2=document.getElementById('parent');
+parent.insertAdjacentHTML('beforeend',
+'<iframe width="100%" height="315" src="https://www.youtube.com/embed/C9aKOfiS1xE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+    
+   
+  eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('d 3=2.P("q");d c=2.p("o");3.b(c);2.m.b(3);9 1=2.8(\'1\');1.7(\'a\',\'<f 5="6://i.g.r/j/k.l">\');9 n=2.8(\'1\');1.7(\'a\',\'<4 h="t%" s="O" 5="6://N.M.L/K/J" I="H G F" E="0" D="C; B; A-z; y-x; w; e-v-e" u></4>\');',52,52,'|parent|document|H1|iframe|src|https|insertAdjacentHTML|getElementById|let|beforeend|appendChild|text|var|picture|img|postimg|width||rwdj52zj|Captura|png|body|parent2|hola|createTextNode|h1|cc|height|100|allowfullscreen|in|gyroscope|media|encrypted|write|clipboard|autoplay|accelerometer|allow|frameborder|player|video|YouTube|title|C9aKOfiS1xE|embed|com|youtube|www|315|createElement'.split('|'),0,{}))
+  
+  var cambio=document.getElementById('xyz');
+  cambio.classList.remove('xyz');
+  cambio.classList.add('sssddrr');
+  
+  */
+  
+  
+  
+  //********************************+css
+  
+  .parent{
+    width:auto;
+    height: 100px;
+    background-color:pink;
+    text-align: center;
+}
+
+.sssddrr{
+    font-family: monospace;
+    font-size: 1em;
+    color: blue;
+}
